@@ -91,7 +91,7 @@
   <project path="hardware/libhardware" name="AOSPA/android_hardware_libhardware" remote="aospa" />
 
   <!-- Manifest -->
-  <project path="manifest" name="AOSPA/manifest" remote="aospa" />
+  <project path="manifest" name="aospa-wayne/manifest" revision="sapphire" remote="github" />
 
   <!-- Packages (AOSP) -->
   <remove-project name="platform/packages/providers/MediaProvider" />
@@ -152,7 +152,7 @@
   <!-- Vendor (AOSPA) -->
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
   <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
-  <project path="vendor/aospa" name="AOSPA/android_vendor_aospa" remote="aospa" >
+  <project path="vendor/aospa" name="aospa-wayne/android_vendor_aospa" revision="sapphire" remote="github" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />

@@ -51,6 +51,7 @@
            fetch="https://gitlab.com" />
 
   <include name="aospa.xml"/>
+  <include name="device.xml"/>
   <include name="obsolete.xml"/>
 
 </manifest>

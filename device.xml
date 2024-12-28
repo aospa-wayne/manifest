@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aospa-wayne"
+           fetch="https://github.com/aospa-wayne"
+           revision="sapphire"/>
+
+  <project path="device/xiaomi/wayne" name="android_device_xiaomi_wayne" remote="aospa-wayne" />
+  <project path="vendor/xiaomi/wayne" name="android_vendor_xiaomi_wayne" remote="aospa-wayne" />
+  <project path="kernel/xiaomi/wayne" name="android_kernel_xiaomi_wayne" remote="aospa-wayne" />
+
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="aospa-wayne" />
+
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="sapphire-caf-sdm660" remote="aospa-wayne" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="sapphire-caf-sdm660" remote="aospa-wayne" >
+      <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="sapphire-caf-sdm660" remote="aospa-wayne" />
+
+</manifest>

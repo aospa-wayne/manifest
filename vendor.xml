@@ -8,20 +8,12 @@
   <project name="device/qcom/vendor-common" remote="caf_vendor"/>
   <project name="kernel/build" path="device/qcom/kernelscripts" remote="caf_vendor"/>
   <project groups="cyborg" name="kernel/msm-5.4" remote="caf_vendor"/>
-  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="caf_vendor"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" remote="caf_vendor"/>
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
-  </project>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" remote="caf_vendor">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
   </project>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
-  </project>
-  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
+  <project name="android_hardware_qcom_thermal" path="vendor/qcom/opensource/thermal-hal" revision="sapphire-caf-sdm660" remote="aospa-wayne"/>
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" remote="caf_vendor"/>
   <project name="platform/packages/apps/SnapdragonCamera" path="vendor/codeaurora/packages/apps/SnapdragonCamera" remote="caf_vendor">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/app_snapcam_product.mk" src="app_snapcam_system_product.mk"/>
